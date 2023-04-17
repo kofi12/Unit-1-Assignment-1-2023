@@ -1,6 +1,7 @@
-import pytest
+from unittest.mock import patch
 import hello
 
-
-def test_hello():
-    assert hello.hello() == "Hello World"
+@patch('builtins.print')
+def test_hello(mock_print):
+    hello.hello()
+    mock_print.assert_called_with('Hello World')
