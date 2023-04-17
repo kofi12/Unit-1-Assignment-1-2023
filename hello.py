@@ -14,6 +14,6 @@ Date Completed: <date>
 def hello():
     # your code goes here, remove the pass statement and replace it with your code
     # hint - you can use the print() function to print to the console, all you need is one line!
-    pass
+    return "Hello World"
 
 hello()
